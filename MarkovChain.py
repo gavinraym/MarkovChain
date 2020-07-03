@@ -61,3 +61,7 @@ class MarkovChain(object):
         # Figure is returned, not displayed. This is to allow the user
         # to make personalized changes to the graph before displaying.
         return fig
+
+    def df(self):
+        '''Returns a pandas DataFrame'''
+        return self._states()
